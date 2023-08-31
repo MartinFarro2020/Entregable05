@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily:{
+      "nunito-sans":['Fira Code', "monospace"],
+    }
   },
   plugins: [],
 }

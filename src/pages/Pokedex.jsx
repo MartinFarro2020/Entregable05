@@ -27,12 +27,13 @@ const pokedex = () => {
   return (
     <main>
       <section>
-        <p>
-          <span>Welcom {name}</span>
+        <p className="flex flex-wrap p-2">
+          <span className="flex text-[#FE1936] font-bold capitalize">Welcom {name}, </span>
+          <span className="flex text-[#333333]">here you can find your favorite pokemon</span>
         </p>
-        <form>
-          <div>
-            <input
+        <form className="flex flex-row mt-4 p-2">
+          <div className="flex">
+            <input className="flex drop-shadow-xl justify-center items-center h-10"
               value={pokemonName}
               onChange={handleChange(setPokemonName)}
               placeholder="Search pokemon..."

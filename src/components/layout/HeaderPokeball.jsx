@@ -11,7 +11,7 @@ const HeaderPokeball = ({ children }) => {
       <header>
         <div className="h-16 bg-red-600 relative">
           <div className="absolute left-0 bottom-0 w-[210px] sm:w-[300px]">
-            <img src="/images/Pokedex.png" alt="" />
+            <img src="/images/Pokedex.png" alt="" className="ml-2"/>
           </div>
         </div>
         <div className="h-14 bg-black relative">

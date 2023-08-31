@@ -18,20 +18,20 @@ const Home = () => {
     <main className="min-h-screen grid grid-rows-[1fr_auto] justify-center items-center">
       <section>
         <article className="grid gap-3">
-          <div className="grid">
+          <div className="grid p-4">
             <img src="/images/Pokedex.png" alt="" />
           </div>
-          <h2 className="flex justify-center text-red-600 font-bold text-3xl mt-3">¡Hello Trainer!</h2>
-          <p className="flex justify-center text-zinc-600 font-semibold">To start give your name</p>
+          <h2 className="flex justify-center text-red-600 font-bold text-3xl">¡Hello Trainer!</h2>
+          <p className="flex justify-center text-[#302F2F] font-semibold">To start give your name</p>
           <form onSubmit={handleSubmit} className="flex justify-center drop-shadow-md">
-            <input className="flex h-10 w-60 mt-3"
+            <input className="flex h-10 w-48 mt-3"
               autoComplete="off"
               placeholder="your name... "
               id="nameTrainer"
               type="text"
               required
             />
-            <button className="flex h-10 bg-red-600 text-white justify-center items-center w-20 mt-3">Start!</button>
+            <button className="flex h-10 drop-shadow-md bg-red-600 text-white justify-center items-center w-20 mt-3">Start!</button>
           </form>
         </article>
       </section>
