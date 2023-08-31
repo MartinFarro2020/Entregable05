@@ -6,8 +6,8 @@ const BarProgresStat = ({ stat }) => {
   };
 
   return (
-    <article>
-      <section className="flex justify-between px-1">
+    <article className="flex flex-col px-5">
+      <section className="flex justify-between">
         <h5>{stat.name}</h5>
         <span>{stat.value}/255</span>
       </section>

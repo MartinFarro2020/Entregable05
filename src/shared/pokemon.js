@@ -46,7 +46,31 @@ const borderStyledPokemonByType = {
 
 };
 
+const textStyledPokemonByType = {
+    normal: "text-[#73525D]",
+    fighting: "text-[#EF6102]",
+    flying: "text-[#538ca6]",
+    poison: "text-[#5E2D88]",
+    ground: "text-[#6E491F]",
+    rock: "text-[#48180A]",
+    bug: "text-[#1C4B27]",
+    ghost: "text-[#32336B]",
+    steel: "text-[#60756E]",
+    fire: "text-orange-500",
+    water: "text-[#1552E1]",
+    grass: "text-[#157B3C]",
+    electric: "text-[#E4E22D]",
+    psychic: "text-[#AC2A6A]",
+    ice: "text-[#84D3F4]",
+    dragon: "text-[#458B95]",
+    dark: "text-[#050706]",
+    fairy: "text-[#EB1269]",
+    unknown: "text-[#35433E]",
+    shadow: "text-[#301645]",
+}
+
 export {
     bgStylePokemonType,
     borderStyledPokemonByType,
+    textStyledPokemonByType,
 }

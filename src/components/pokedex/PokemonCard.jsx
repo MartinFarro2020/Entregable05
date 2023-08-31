@@ -4,6 +4,7 @@ import StatList from "./StatList";
 import {
   bgStylePokemonType,
   borderStyledPokemonByType,
+  textStyledPokemonByType,
 } from "../../shared/pokemon";
 import { Link } from "react-router-dom";
 
@@ -19,7 +20,7 @@ const PokemonCard = ({ pokemonUrl }) => {
   return (
     <Link
       to={`/pokedex/${pokemonInfo?.id}`}
-      className={`text-center capitalize border-[5px] rounded-md ${
+      className={`text-center capitalize border-[8px] rounded-2xl ${
         borderStyledPokemonByType[pokemonInfo?.types[0]]
       }`}
     >
@@ -37,11 +38,11 @@ const PokemonCard = ({ pokemonUrl }) => {
         </div>
       </header>
       <section>
-        <h3 className="text-lg font-bold">{pokemonInfo?.name}</h3>
+        <h3 className={`text-2xl font-bold ${textStyledPokemonByType[pokemonInfo?.types[0]]}`}>{pokemonInfo?.name}</h3>
         <h4>{joinPokemonTypes(pokemonInfo?.types)}</h4>
         <h5 className="text-sm mb-2">Types</h5>
         <hr />
-        <StatList stats={pokemonInfo?.stats} />
+        <StatList stats={pokemonInfo?.stats} pokemonInfo={pokemonInfo?.types[0]} />
       </section>
     </Link>
   );
