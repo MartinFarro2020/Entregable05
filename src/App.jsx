@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Home from './pages/Home'
-import Pokedex from './pages/pokedex'
+import Pokedex from './pages/Pokedex'
 import PokemonDetail from './pages/PokemonDetail'
 import Page404 from './pages/Page404'
 import PrivateRoutes from './components/auth/PrivateRoutes'
