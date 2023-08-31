@@ -17,7 +17,8 @@ const PokemonCard = ({ pokemonUrl }) => {
   }, []);
 
   return (
-    <Link to = {`/pokedex/${pokemonInfo?.id}`}
+    <Link
+      to={`/pokedex/${pokemonInfo?.id}`}
       className={`text-center capitalize border-[5px] rounded-md ${
         borderStyledPokemonByType[pokemonInfo?.types[0]]
       }`}
