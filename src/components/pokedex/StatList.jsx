@@ -1,9 +1,10 @@
-import { textStyledPokemonByType } from "../../shared/pokemon";
+import { textStyledPokemonByType } from "../../shared/pokemon.js";
 
-const StatList = ({ stats},{ pokemonInfo }) => {
+const StatList = ({stats}, {pokemonInfo}) => {
   
   return (
     <ul className={"grid gap-2 grid-cols-3 text-xs p-2"}>
+      <span>{pokemonInfo}</span>
       {stats?.map((stat) => (
         <li key={stat.name}>
           <h4 className="capitalize line-clamp-1">{stat.name}</h4>
@@ -15,7 +16,6 @@ const StatList = ({ stats},{ pokemonInfo }) => {
           </span>
         </li>
       ))}
-    </ul>
-  );
+    </ul>);
 };
 export default StatList;

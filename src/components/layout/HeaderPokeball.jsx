@@ -16,7 +16,7 @@ const HeaderPokeball = ({ children }) => {
         </div>
         <div className="h-14 bg-black relative">
           <button onClick={handleLogout} className="h-16 aspect-square bg-white rounded-full absolute right-0 -translate-x-1/2 -top-8 border-[8px] border-black after:block after:content-[''] after:h-8 after:aspect-square after:bg-slate-600 after:rounded-full after:absolute after:left-1/2 after:-translate-x-1/2 after:top-1/2 after:-translate-y-1/2 after:border-[6px] after:border-black transition-colors hover:bg-red-500 cursor-pointer"></button>
-          <span className="flex bg-red-600 text-white border-black border-[6px] h-10 aspect-square rounded-full right-6 -translate-x-1/2 -top-5 absolute items-center justify-center">Exit</span>
+          <span className="flex bg-red-600 text-white h-4 w-10 rounded-xl right-6 -translate-x-1/2 top-9 absolute items-center justify-center">Exit</span>
         </div>
         
       </header>
@@ -25,3 +25,4 @@ const HeaderPokeball = ({ children }) => {
   );
 };
 export default HeaderPokeball;
+

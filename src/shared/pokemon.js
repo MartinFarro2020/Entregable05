@@ -67,7 +67,7 @@ const textStyledPokemonByType = {
     fairy: "text-[#EB1269]",
     unknown: "text-[#35433E]",
     shadow: "text-[#301645]",
-}
+};
 
 export {
     bgStylePokemonType,
