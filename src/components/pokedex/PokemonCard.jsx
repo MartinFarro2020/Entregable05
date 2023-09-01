@@ -42,7 +42,7 @@ const PokemonCard = ({ pokemonUrl }) => {
         <h4>{joinPokemonTypes(pokemonInfo?.types)}</h4>
         <h5 className="text-sm mb-2">Types</h5>
         <hr />
-        <StatList stats={pokemonInfo?.stats} pokemonInfo={pokemonInfo?.types[0]} />
+        <StatList stats={pokemonInfo?.stats} pokemonInfo={pokemonInfo} />
       </section>
     </Link>
   );
