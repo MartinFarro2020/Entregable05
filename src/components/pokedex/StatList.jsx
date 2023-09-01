@@ -10,8 +10,7 @@ const StatList = ({ stats},{ pokemonInfo }) => {
           <span
             className={`font-bold ${
               textStyledPokemonByType[pokemonInfo?.types[0]]
-            }`}
-          >
+            }`}>
             {stat.value}
           </span>
         </li>

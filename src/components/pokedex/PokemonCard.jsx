@@ -40,9 +40,9 @@ const PokemonCard = ({ pokemonUrl }) => {
       <section>
         <h3 className={`text-2xl font-bold ${textStyledPokemonByType[pokemonInfo?.types[0]]}`}>{pokemonInfo?.name}</h3>
         <h4>{joinPokemonTypes(pokemonInfo?.types)}</h4>
-        <h5 className="text-sm mb-2">Types</h5>
+        <h5 className="flex justify-center text-xs mb-4">Types</h5>
         <hr />
-        <StatList stats={pokemonInfo?.stats} pokemonInfo={pokemonInfo} />
+        <StatList pokemonInfo={pokemonInfo} stats={pokemonInfo?.stats}  />
       </section>
     </Link>
   );

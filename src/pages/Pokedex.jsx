@@ -31,7 +31,7 @@ const pokedex = () => {
           <span className="flex text-[#FE1936] font-bold capitalize">Welcom {name}, </span>
           <span className="flex text-[#333333]">here you can find your favorite pokemon</span>
         </p>
-        <form className="flex flex-row mt-4 mb-4 p-2 justify-center">
+        <form className="flex flex-row gap-4 mt-4 mb-4 p-2 justify-center">
           <div className="flex">
             <input className="flex drop-shadow-xl justify-center items-center h-10"
               value={pokemonName}
@@ -41,7 +41,7 @@ const pokedex = () => {
             />
           </div>
 
-          <select  value={pokemonType} onChange={handleChange(setPokemonType)}>
+          <select className="flex drop-shadow-xl" value={pokemonType} onChange={handleChange(setPokemonType)}>
             <option  value="">All pokemons</option>
             {types.map((type) => (
               <option key={type.name} value={type.name} className="capitalize">

@@ -30,7 +30,7 @@ const Pagination = ({
       {currentPage >= 2 && <li onClick={handleFirsPage}>{"<<"}</li>}
       {currentPage >= 2 && <li onClick={handlePreviusPage}>{"<"}</li>}
       {pagesInCurrentBlock.map((page) => (
-        <li className={`p-2 ${currentPage === page ? "text-white bg-red-500" : ""}`} key={page} onClick={() => setcurrentPage(page)}>
+        <li className={`flex justify-center items-center p-4 h-[35px] aspect-square ${currentPage === page ? "text-white bg-red-600 " : ""}`} key={page} onClick={() => setcurrentPage(page)}>
           {page}
         </li>
       ))}
